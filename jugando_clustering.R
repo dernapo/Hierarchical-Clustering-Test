@@ -41,3 +41,13 @@ distxy<-dist(DF)
 hClustering<-hclust(distxy)
 
 myplclust(hClustering, lab=rep(1:3, each=3), lab.col=rep(1:3, each=3))
+
+
+## Here a new option of ploting with heatmap()
+
+dataMatrix<-data.matrix(DF)[,2:4]
+
+heatmap(dataMatrix)
+
+
+
